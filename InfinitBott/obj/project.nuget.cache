@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4AGh7ACqoaFCkbnpvTJvZQltFneUgWU12Wrf/HVcnJPW3DnMK9AXAfDF7U0Eb3zXUSTTqBAtXrnNh9u9+lEvIg==",
+  "dgSpecHash": "WT1LTu5DM1ANkPVCViiuk5XN+QXoQUeptO0xHgX/mUEHjnKik5JCJ6QF3RcMS/1RNdztbF6Cw2+q48oPx7zikw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kailo\\source\\repos\\InfinitBott\\InfinitBott\\InfinitBott.csproj",
+  "projectFilePath": "C:\\Users\\kailo\\Documents\\GitHub\\InfinitBot\\InfinitBott\\InfinitBott.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kailo\\.nuget\\packages\\concurrenthashset\\1.1.0\\concurrenthashset.1.1.0.nupkg.sha512",
     "C:\\Users\\kailo\\.nuget\\packages\\dsharpplus\\4.1.0\\dsharpplus.4.1.0.nupkg.sha512",
@@ -84,7 +84,11 @@
     "C:\\Users\\kailo\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\kailo\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
     "C:\\Users\\kailo\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
-    "C:\\Users\\kailo\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\kailo\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\kailo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.24\\microsoft.netcore.app.host.win-x64.3.1.24.nupkg.sha512",
+    "C:\\Users\\kailo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\kailo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\kailo\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
   "logs": []
 }

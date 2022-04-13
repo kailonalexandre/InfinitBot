@@ -1,40 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kailo\\source\\repos\\InfinitBott\\InfinitBott\\InfinitBott.csproj": {}
+    "C:\\Users\\kailo\\Documents\\GitHub\\InfinitBot\\InfinitBott\\InfinitBott.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kailo\\source\\repos\\InfinitBott\\InfinitBott\\InfinitBott.csproj": {
+    "C:\\Users\\kailo\\Documents\\GitHub\\InfinitBot\\InfinitBott\\InfinitBott.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kailo\\source\\repos\\InfinitBott\\InfinitBott\\InfinitBott.csproj",
+        "projectUniqueName": "C:\\Users\\kailo\\Documents\\GitHub\\InfinitBot\\InfinitBott\\InfinitBott.csproj",
         "projectName": "InfinitBott",
-        "projectPath": "C:\\Users\\kailo\\source\\repos\\InfinitBott\\InfinitBott\\InfinitBott.csproj",
+        "projectPath": "C:\\Users\\kailo\\Documents\\GitHub\\InfinitBot\\InfinitBott\\InfinitBott.csproj",
         "packagesPath": "C:\\Users\\kailo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kailo\\source\\repos\\InfinitBott\\InfinitBott\\obj\\",
+        "outputPath": "C:\\Users\\kailo\\Documents\\GitHub\\InfinitBot\\InfinitBott\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "F:\\SDK\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\kailo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.emzi0767.com/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -79,12 +71,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.24, 3.1.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
