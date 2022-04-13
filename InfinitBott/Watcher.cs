@@ -35,7 +35,7 @@ namespace InfinitBott
         {
             fileSystemWatcher.Filter = this.Filter;
             fileSystemWatcher.Path = this.Directory;
-            fileSystemWatcher.NotifyFilter = NotifyFilters.LastWrite;
+            fileSystemWatcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.CreationTime;
             fileSystemWatcher.EnableRaisingEvents = true;
 
             fileSystemWatcher.Changed +=
@@ -43,6 +43,7 @@ namespace InfinitBott
 
             fileSystemWatcher.Created +=
                  new FileSystemEventHandler(fileSystemWatcher_Changed);
+    
         }
        
      

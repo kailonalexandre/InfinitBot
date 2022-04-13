@@ -26,7 +26,7 @@ namespace MyFirstBot
         {
             bot = new InfinitBott.Bot();
             //Chama os métodos de monitoramento de arquivos
-            invokeMethodDelegate mymethod = new invokeMethodDelegate(onChanged);
+            invokeMethodDelegate mymethod = new invokeMethodDelegate(SendMessage);
             Watcher w1 = new Watcher(@"D:\Outros Plus\Versões Plus", "*.zip", mymethod);
             w1.StartWatch();
 
@@ -37,12 +37,14 @@ namespace MyFirstBot
             bot.MainAsync().GetAwaiter().GetResult();
         }
 
-        public static async Task onChanged(FileSystemEventArgs e)
+        public static async Task SendMessage(FileSystemEventArgs e)
         {
+            
             var result = lastMessageSended.Subtract(DateTime.Now).TotalMinutes * -1;
-            if (result < 1) return;
+            if (result < 1) 
+                return;
             bool IsPlus = e.Name.ToLower().Contains("plus");
-            ulong channelId = (ulong)(IsPlus ? 000 : 1111);
+            ulong channelId = (ulong)(IsPlus ? 935162786382753822 : 935162764299763752);
 
             DiscordChannel channel = await bot.Client.GetChannelAsync(channelId);
 
@@ -54,6 +56,7 @@ namespace MyFirstBot
 
             };
             await channel.SendMessageAsync(message);
+            lastMessageSended = DateTime.Now;
         }
     }
 }
