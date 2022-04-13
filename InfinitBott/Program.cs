@@ -41,10 +41,11 @@ namespace MyFirstBot
         {
             var result = lastMessageSended.Subtract(DateTime.Now).TotalMinutes * -1;
             if (result < 1) return;
-
-            DiscordChannel channel = await bot.Client.GetChannelAsync(000);
-
             bool IsPlus = e.Name.ToLower().Contains("plus");
+            ulong channelId = (ulong)(IsPlus ? 000 : 1111);
+
+            DiscordChannel channel = await bot.Client.GetChannelAsync(channelId);
+
             DiscordEmbedBuilder message = new DiscordEmbedBuilder()
             {
                 Title = "Versão Liberada",
