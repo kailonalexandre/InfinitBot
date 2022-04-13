@@ -8,7 +8,7 @@ using DSharpPlus.CommandsNext;
 using System.Text;
 using Newtonsoft.Json;
 using Microsoft.Extensions.Logging;
-using Bot.Commands;
+using BotCommands;
 using DSharpPlus.Interactivity;
 using DSharpPlus.Interactivity.Extensions;
 

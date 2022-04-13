@@ -35,15 +35,19 @@ namespace InfinitBott
         {
             fileSystemWatcher.Filter = this.Filter;
             fileSystemWatcher.Path = this.Directory;
+            fileSystemWatcher.NotifyFilter = NotifyFilters.LastWrite;
             fileSystemWatcher.EnableRaisingEvents = true;
 
             fileSystemWatcher.Changed +=
+                 new FileSystemEventHandler(fileSystemWatcher_Changed);
+
+            fileSystemWatcher.Created +=
                  new FileSystemEventHandler(fileSystemWatcher_Changed);
         }
        
      
 
-        void fileSystemWatcher_Changed(FileSystemEventArgs e)
+        void fileSystemWatcher_Changed(object sender, FileSystemEventArgs e)
         {
             
             if (_changeMethod != null)
