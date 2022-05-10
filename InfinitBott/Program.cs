@@ -44,16 +44,15 @@ namespace MyFirstBot
             if (result < 1) 
                 return;
             bool IsPlus = e.Name.ToLower().Contains("plus");
-            ulong channelId = (ulong)(IsPlus ? 935162786382753822 : 935162764299763752);
+            ulong channelId = (ulong)(IsPlus ? 972191452782280774 : 972191489444679760);
 
             DiscordChannel channel = await bot.Client.GetChannelAsync(channelId);
-
             DiscordEmbedBuilder message = new DiscordEmbedBuilder()
             {
                 Title = "Versão Liberada",
-                Description = e.Name,
-                Color = IsPlus ? DiscordColor.Blue : DiscordColor.Purple
-
+                Description = e.Name + " <@&935167643994951711> " + "<@&935169491120304189>",
+                Color = IsPlus ? DiscordColor.Blue : DiscordColor.Purple,
+                
             };
             await channel.SendMessageAsync(message);
             lastMessageSended = DateTime.Now;
